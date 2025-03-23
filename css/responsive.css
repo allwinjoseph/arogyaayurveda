@@ -1,0 +1,254 @@
+/* Arogya Ayurvedic Wellness Centre - responsive */
+
+
+@media (max-width: 1280px) {
+	.row{ margin:0 auto; width:1100px; }
+	.Navigation_menu li a { padding : 0px 20px; }
+}
+@media (max-width: 1180px) {
+	.row{ margin:0 auto; width:1000px; }
+	.Navigation_menu li a { padding : 0px 26px; }
+}
+
+@media only screen and (min-width: 980px) and (max-width: 1160px) {
+	.row{ margin:0 auto; width:940px;  overflow:hidden;  }
+	.Navigation_menu li a { padding : 0px 14px; }
+	#menu{  margin-left : 74px; }
+	.left_container{ width : 30%;	float : left; }
+	.right_container{ width : 66%; float : right; }
+	.gallery ul li{ width : 45%; }
+	.gallery .slides li { height: 200px; }
+	.gallery_container ul li { width : 27%; }
+}
+
+@media only screen and (min-width: 840px) and (max-width: 980px) {
+	.row{ margin:0 auto; width:800px;  overflow:hidden; }
+	.Navigation_menu li a { padding : 0px 10px; }
+	#menu{  margin-left : 0px; }
+	.f_our_speciality ul li{  padding : 6px 10px; margin : 4px; }
+	.left_container{	width : 34%;	}
+	.right_container{	width : 60%; }
+	.facility_img li{ width : 50%; }
+	.treatment_rates_img img, .treatment_rates_img_3 img { min-height : 130px !important; } 
+	.double_treatment_rates_detail { padding-top : 30px; }
+	.treatment_rates_detail_left { padding-top : 0px; }
+	.treatment_rates_detail { padding-top : 0px; }
+	.gallery ul li{ width : 44%; }
+	.contact_us_left{ 	width : 100%; }
+	.contact_us_right{	width : 100%; }
+	.gallery .slides li { height: 180px; }
+	.gallery_container ul li { width :26%; height : 134px;}
+}
+
+@media only screen and (min-width: 740px) and (max-width: 840px) {
+	.row{ margin:0 auto; width:700px;  overflow:hidden; }
+	.Navigation_menu li a { padding : 0px 2px !important; }
+	#menu{  margin-left : 16px; }
+	.f_our_speciality ul li{  padding : 6px 10px; margin : 10px; }
+	.f_our_speciality ul li{  padding : 6px 10px; margin : 4px; }
+	.gallery .slides li { height: 158px; }
+	.logo { width : 100%; }
+	.top_left { width : 100%; }
+	
+}
+
+@media only screen and (min-width: 640px) and (max-width: 740px) {
+	.row{ margin:0 auto; width:600px;  overflow:hidden; }
+	.Navigation_menu li a { padding : 0px 10px !important; }
+	.about_desc { width : 100%; }
+	.about_gallery { width : 100%; }
+	.f_our_speciality ul li{  padding : 6px 10px; margin : 4px; }
+	.footer_left { width : 100%; }
+	.footer_right { width : 100%; margin-top : 20px; }
+	
+}
+
+@media only screen and (min-width: 540px) and (max-width: 640px) {
+	.row{ margin:0 auto; width:500px;  overflow:hidden; }
+	.logo{ width : 100%; }
+	.top_left{ width : 100%; }
+	.our_location { width : 100%; }
+	.f_address { width : 100%; margin-top : 20px; padding : 0px; }
+}
+
+@media only screen and (min-width: 440px) and (max-width: 540px) {
+	.row{ margin:0 auto; width:400px;  overflow:hidden; }
+	.logo{ width : 100%;}
+	.top_left{ width : 100%; }
+}
+
+@media only screen and (min-width: 340px) and (max-width: 440px) {
+	.row{ margin:0 auto; width:300px;  overflow:hidden; }
+	.top_left{ width : 100%; }
+	.logo { width : 100%; }
+}
+@media only screen and (min-width: 240px) and (max-width: 340px) {
+	.row{ margin:0 auto; width:200px;  overflow:hidden; }
+	.top_left{ width : 100%; }
+	.logo { width : 100%;  }
+	.social_links { width : 75%; padding-left : 20px; }
+	.contact_detail .col_1, .contact_detail .col_2 { width : 100%; }
+}
+
+
+@media (max-width: 840px) {
+	.left_container { width : 40%; }
+	.right_container { width : 100%; }
+	.facility_img li{ width : 50%; }
+	.treatment_rates_img img, .treatment_rates_img_3 img { min-height : 130px !important; } 
+	.double_treatment_rates_detail { padding-top : 30px; }
+	.treatment_rates_detail_left { padding-top : 0px; }
+	.treatment_rates_detail { padding-top : 0px; }
+	.gallery ul li{ width : 42%; }
+	.contact_us_left{ 	width : 100%; }
+	.contact_us_right{	width : 100%; }
+	.gallery_container ul li { width :43%; }
+	.left_container { width : 98% !important; }
+	.container .testimonials .testi_head  li#testi_li_first, .container .testimonials .testi_head  li#press_li_last {	width : 43.8%; }
+}
+
+@media (max-width: 740px) {
+
+	.about_desc { width : 100%; }
+	.about_gallery { width : 100%; }
+	.testimonials { width : 100%; }
+	.aboutus_desc { width : 100%; }	
+	.f_our_speciality ul li{  padding : 6px 10px; margin : 4px; }
+	.footer_left { width : 100%; }
+	.footer_right { width : 100%; margin-top : 20px; }
+	
+	.right_container { width : 100%; }
+	.social_share .social_links { margin-left :40%; }
+	.about_us_detail_img img{ width : 96%; }
+	.facility_img li{ width : 50%; }
+	.top_left{ width : 100%; }
+	.gallery ul li{ width : 44%; }
+	.gallery .slides li { height: 280px; }
+	.gallery_container ul li { width :43%; }
+	.our_specialization_section li{ width : 50%; float : left; }
+	.container .testimonials .testi_head  li#testi_li_first, .container .testimonials .testi_head  li#press_li_last {	width : 41.4%; }
+}
+@media (max-width: 600px) {
+	.approval_certifies ul li{ width : 100%; }
+	.our_location { width : 100%; }
+	.f_address { width : 100%; }
+	.f_address { width : 100%; margin-top : 20px; padding : 0px; }
+	
+	.right_container { width : 100%; }
+	.facility_img li{ width : 50%; }
+	.social_share .social_links { margin-left :30%; }
+	.specia_cont_img{ width : 100%; }
+	.specia_cont_img_detail{ width : 100%; }
+	.specia_cont_img{ margin-bottom : 20px; }
+	.gallery ul li{ width : 100%; }
+	#cssSlider {	height: 350px; }
+	#sliderImages {	height: 350px; }
+	.gallery_container ul li { width :42%; }
+	.container .testimonials .testi_head  li#testi_li_first, .container .testimonials .testi_head  li#press_li_last {	width : 38.9%; }
+	
+}
+
+@media (max-width: 440px) {
+	.our_specialization_section li{ width : 100%; }
+	.f_our_speciality ul li{  padding : 4px 6px; margin : 2px; }
+	.facility_img li{ width : 100%; }
+	.social_share .social_links { margin-left :20%; }
+	.gallery ul li{ width : 100%; }
+	#cssSlider {	height: 300px; }
+	#sliderImages {	height: 300px; }
+	.gallery .slides li { height: 220px; }
+	.gallery_container ul li { width :96%; }
+	.treatment_rates_img, .treatment_rates_img_right { width : 100%; }
+	.treatment_rates_detail, .treatment_rates_detail_left { width : 100%; margin-top : 20px; }
+	.contact_detail .col_1 { width : 100%; }
+	.contact_detail .col_2 { width : 100%; margin-top : 10px;  }
+	.our_specialization_section li{ width : 100%; }
+	.container .testimonials .testi_head  li#testi_li_first, .container .testimonials .testi_head  li#press_li_last {	width : 34.9%; }
+}
+@media (max-width: 340px) {
+	.gallery .slides li { height: 140px; }
+	.container .testimonials .testi_head  li#testi_li_first, .container .testimonials .testi_head  li#press_li_last {	width : 80%; }
+}
+@keyframes slide{
+	0%{margin-left: 0px;}
+	17%{margin-left: 0px;}
+	20%{margin-left: -800px;}
+	37%{margin-left: -800px;}
+	40%{margin-left: -1600px;}
+	57%{margin-left: -1600px;}
+	60%{margin-left: -2400px;}
+	77%{margin-left: -2400px;}
+	80%{margin-left: -3200px;}
+	97%{margin-left: -3200px;}
+	100%{margin-left: 0px;}
+}
+
+@-moz-keyframes slide{
+	0%{margin-left: 0px;}
+	17%{margin-left: 0px;}
+	20%{margin-left: -800px;}
+	37%{margin-left: -800px;}
+	40%{margin-left: -1600px;}
+	57%{margin-left: -1600px;}
+	60%{margin-left: -2400px;}
+	77%{margin-left: -2400px;}
+	80%{margin-left: -3200px;}
+	100%{margin-left: -3200px;}
+}
+
+@-webkit-keyframes slide{
+	0%{margin-left: 0px;}
+	17%{margin-left: 0px;}
+	20%{margin-left: -800px;}
+	37%{margin-left: -800px;}
+	40%{margin-left: -1600px;}
+	57%{margin-left: -1600px;}
+	60%{margin-left: -2400px;}
+	77%{margin-left: -2400px;}
+	80%{margin-left: -3200px;}
+	100%{margin-left: -3200px;}
+}
+
+@-o-keyframes slide{
+	0%{margin-left: 0px;}
+	17%{margin-left: 0px;}
+	20%{margin-left: -800px;}
+	37%{margin-left: -800px;}
+	40%{margin-left: -1600px;}
+	57%{margin-left: -1600px;}
+	60%{margin-left: -2400px;}
+	77%{margin-left: -2400px;}
+	80%{margin-left: -3200px;}
+	100%{margin-left: -3200px;}
+}
+
+
+
+/* 
+@media (max-width: 500px) {
+	
+}
+
+@media (min-width: 401px){
+
+}
+
+@media (max-width: 400px){
+
+}
+
+@media (max-width: 500px) {
+
+
+}
+*/
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,956 @@
+/* Arogya Ayurvedic Wellness Centre */
+
+body{
+	margin : 0px;
+	background : url(../images/content_bg.jpg) repeat;
+	font-family: "Arial", Georgia, Serif;
+	font-size : 15px;
+}
+@font-face {
+  font-family: 'fyodor';
+  src: url('fonts/fyodor/fyodor/web/webfont.eot'); /* IE9 Compat Modes */
+  src: url('fonts/fyodor/fyodor/web/webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/fyodor/fyodor/web/webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/fyodor/fyodor/web/webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/fyodor/fyodor/web/webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/fyodor/fyodor/web/webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face {
+  font-family: 'aron_grotesque_bold';
+  src: url('fonts/aron_grotesque/aron_grotesque_regular.ttf')  format('truetype');
+  
+}
+ul{
+	margin : 0px;
+	padding : 0px;
+}
+li{
+	list-style : none;
+}
+a{
+	text-decoration : none;
+	color : #000000;
+}
+
+a:hover{
+	color : #459438;
+}
+h3{
+	font-size : 24px;
+	margin : 30px 0px;
+}
+h1{
+	color : #1C3B11;
+}
+
+
+.wrapper{
+	width : 100%;
+}
+.row{
+	width : 1180px;
+	height : auto;
+	margin : 0px auto;
+	display : block;
+}
+.row::after{
+	display : table;
+	content : "";
+	clear : both;
+}
+.line{
+	clear : both;
+	width : 100%;
+	height : 30px;
+}
+
+/* header - Start */
+.outer_row{
+	background : #459438;
+	color : #ffffff;
+	width:100%;
+}
+.header{
+	width : 100%;
+	position: relative;
+	clear : both;
+}
+.logo{
+	width : 56%;
+	float : left;
+}
+.logo p { text-align : center;  padding : 20px 0px; font-size : 16px; font-weight : bold; color : #fdf23c;}
+.logo h1{
+	font-family: aron_grotesque_bold;
+	font-size : 30px;
+	font-weight : bold;
+	color : #ffffff;
+	margin-top : 30px;
+	margin-left : 20px;
+	text-align : center;
+}
+.top_left{
+	width : 40%;
+	float : right;
+	margin-right : 10px;
+	margin-top : 32px;
+	padding-bottom : 10px;
+}
+.contact_detail .col_1{
+	width : 50%;
+	float : left;
+	text-align : right;
+}
+.contact_detail .col_2{
+	width : 50%;
+	float : right;
+	text-align : right;
+}
+.social_links{
+	clear : both;
+	min-height : 40px;
+	/*width: 40%;*/
+    float: right;
+}
+
+.social_links li{
+	width : 34px;
+	height : 34px;
+	float : right;
+}
+.google_plus{
+	background-image : url("../images/social_icon.png");
+	background-repeat: no-repeat;
+	background-position : -74px 0px;
+}
+.google_plus:hover{
+	background-position : -74px -40px;
+}
+.twitter{
+	background-image : url("../images/social_icon.png");
+	background-repeat: no-repeat;
+	background-position : -38px 0px;
+}
+.twitter:hover{
+	background-position : -38px -40px;
+}
+.facebook{
+	background-image : url("../images/social_icon.png");
+	background-repeat: no-repeat;
+	background-position : 0px 0px;
+}
+.facebook:hover{
+	background-position : 0px -40px;
+}
+
+
+/* Navigation menu - Start */
+#menu{
+	min-height : 50px;	
+	margin-left : 70px;
+}
+/*Strip the ul of padding and list styling*/
+.Navigation_menu ul {
+	list-style-type:none;
+	margin : 0px;
+	padding:0;
+	position: relative;
+}
+
+/*Create a horizontal list with spacing*/
+.Navigation_menu li {
+	display:inline-block;
+	float: left;
+	margin-right: 1px;
+}
+
+/*Style for menu links*/
+.Navigation_menu li a {
+	display:block;
+	padding : 0px 30px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #fff;
+	background: #2f3036;
+	text-decoration: none;
+}
+
+/*Hover state for top level links*/
+.Navigation_menu li:hover a, .Navigation_menu #menu li.active a{
+	background: #01a43b;
+}
+
+/*Style for dropdown links*/
+.Navigation_menu li:hover ul a {
+	background: #f3f3f3;
+	color: #2f3036;
+	height: 40px;
+	line-height: 40px;
+}
+
+/*Hover state for dropdown links*/
+.Navigation_menu li:hover ul a:hover {
+	background: #01a43b;
+	color: #fff;
+}
+
+/*Hide dropdown links until they are needed*/
+.Navigation_menu li ul {
+	display: none;
+}
+
+/*Make dropdown links vertical*/
+.Navigation_menu li ul li {
+	display: block;
+	float: none;
+}
+
+/*Prevent text wrapping*/
+.Navigation_menu li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 20px;
+}
+
+/*Display the dropdown on hover*/
+.Navigation_menu ul li a:hover + .hidden, .hidden:hover {
+	display: block;
+	position : absolute;
+}
+
+/*Style 'show menu' label button and hide it by default*/
+.Navigation_menu .show-menu {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: #fff;
+	background: #19c589;
+	text-align: center;
+	padding: 10px 0;
+	display: none;
+}
+
+/*Hide checkbox*/
+.Navigation_menu input[type=checkbox]{
+    display: none;
+    -webkit-appearance: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+.Navigation_menu input[type=checkbox]:checked ~ #menu{
+    display: block;
+}
+.outer_Navigation{
+	width : 100%;
+	background : #2f3036;
+}
+
+/*Responsive Styles*/
+
+@media screen and (max-width : 760px){
+	/*Make dropdown links appear inline*/
+	.outer_Navigation{
+		background : #19c589;
+	}
+	.Navigation_menu ul {
+		position: static;
+		display: none;
+	}
+	/*Create vertical spacing*/
+	.Navigation_menu li {
+		margin-bottom: 1px;
+	}
+	/*Make all menu links full width*/
+	.Navigation_menu ul li, .Navigation_menu li a {
+		width: 100%;
+	}
+	/*Display 'show menu' link*/
+	.Navigation_menu .show-menu {
+		display:block;
+	}
+	.Navigation_menu ul li a:hover + .hidden, .hidden:hover {
+	position : relative;
+	}
+	#menu{
+		margin-left : 0px;
+	}
+}
+/* Navigation menu - End */
+
+
+
+
+
+/* main_container -Start */
+.main_container{
+	clear : both;
+}
+.our_specialization_section, .about_us_content, .testimo_aboutus, .footer_container,
+.about_us_container, .container{
+	clear : both;
+	width : 100%;
+	display : block;
+}
+.our_specialization_section::after, .about_us_content::after, .testimo_aboutus::after, .footer_container::after,
+.about_us_container::after, .container::after, .gallery_container::after{
+	display : table;
+	content : "";
+	clear : both;
+}
+
+.our_specialization_section{
+	padding-top : 20px;
+	clear : both;
+}
+.our_specialization_section li{
+	width : 100%;
+	text-align : center;
+}
+.our_specialization_section h2{
+	text-align : center;
+	font-size : 26px;
+	margin : 30px 0px;
+}
+.cont_detail{
+	text-align : center;
+	margin : 20px 0px;
+	font-size : 14px;
+	font-weight : bold;
+}
+
+.about_desc{
+	width : 100%;
+	clear : both;
+}
+.about_gallery{
+	width : 30%;
+	float : right;
+}
+.aboutusgallery_left .about_gallery{
+	width : 100%;
+}
+.about_desc p{
+	font-size : 16px;
+	padding : 0px 20px;
+	line-height : 24px;
+	text-align: justify;
+}
+
+.gallery .flex-control-nav{
+	display : none;
+}
+
+.gallery li img{
+	width : 100%;
+	height : 100%;
+}
+
+.gallery .slides li{
+	width : 100%;
+	height : 220px;
+	overflow : hidden;
+	position : relative;
+}
+.gallery .slides li .gallery_dec{
+	width : 100%;
+	position :  absolute;
+	bottom : 0px;
+	background : #000000;
+	color : #ffffff;
+	text-align : center;
+	opacity : 0.8;
+	padding : 10px 0px;
+}
+
+.about_gallery h3{
+	text-align : center;
+}
+
+.testimonials{
+	width : 30%;
+	float : left;
+	margin-top : 36px;
+}
+.aboutus_desc{
+	width : 66%;
+	float : right;
+}
+.aboutus_desc p{
+	font-size : 16px;
+	padding : 0px 20px;
+	line-height : 22px;
+	text-align: justify;
+}
+.testi_head{
+	clear : both;
+	width : 100%;
+}
+.testi_head ul{
+	width : 100%;
+}
+.testi_head  li{
+	padding : 10px 20px;
+	border : 1px solid #cccccc;
+	float : left;
+	background : #459438;
+	color : #ffffff;
+}
+.testicont_presscont{
+	clear : both;
+	width : 100%;
+	border : 1px solid #cccccc;
+}
+.testicont_presscont ul{
+	margin : 10px;
+}
+.testimonials h5{
+	color : #000000;
+	font-weight : bold;
+	font-size : 14px;
+	margin : 12px 0px;
+}
+.testimonials .auother_name{
+	color : #592202;
+	font-weight : bold;
+	font-size : 12px;
+	padding : 10px 0px;
+}
+.testi_detail{
+	background : #ffffff;
+	border-left: 5px solid #459438;
+}
+.testi_detail p{
+	padding : 16px 15px;
+}
+.testimonials .first{
+	border-bottom : 1px dotted #000000;
+	padding-bottom : 24px;
+}
+.testi_head .testi_li_first{
+	border-bottom : none;
+}
+.approval_certifies{
+	clear : both;
+	width : 100%;
+}
+.approval_certifies ul{
+	width : 100%;
+}
+.approval_certifies ul li{
+	width : 33%;
+	float : left;
+	text-align : center;
+}
+.approval_certifies{
+	font-size : 20px;
+	 text-shadow: 1px 1px #ffffff;
+}
+
+.footer{
+	background : #2e2214;
+	color : #ffffff;
+}
+.copyright_content{
+	clear : both;
+	width : 100%;
+	background : #000000;
+	color : #ffffff;
+}
+.footer p{
+	color : #e5e5e5;
+}
+.footer_container h5{
+	font-size : 18px;
+	margin : 10px;
+}
+.our_location{
+	float : left;
+	width : 50%;
+}
+#map{
+	width : 95%;
+	margin-left : 10px;
+}
+
+
+.f_our_speciality{
+	width : 100%;
+}
+.f_our_speciality ul{
+	padding-left : 10px;
+}
+.f_our_speciality ul li{
+	padding : 6px 10px;
+	margin : 10px;
+	color : #e5e5e5;
+	float : left;
+}
+
+.f_address{
+	float : left;
+	width : 48%;
+	padding : 0px 20px;
+	margin-top : 2px;
+}
+.f_address p{
+	margin-left : 10px;
+}
+.f_address a{
+	color : #F1FC02;
+}
+.f_address a:hover{
+	color : #07FB46;
+}
+
+.quick_contact{
+	float : right;
+	width : 100%;
+}
+.footer_left{
+	width : 70%;
+	float : left;
+}
+.footer_right{
+	width : 26%;
+	float : right;
+}
+.footer_left_top{
+	width : 100%;
+	clear : both;
+}
+.footer_left_bottom{
+	width : 100%;
+	clear : both;
+}
+
+.copyright{
+	clear : both;
+	width : 100%;
+	text-align : center;
+	font-size : 12px;
+	padding : 16px 10px;
+}
+
+/* BackToTop button css */
+#scroll {
+position:fixed;
+right:10px;
+bottom:10px;
+cursor:pointer;
+width:40px;
+height:40px;
+background-color:#07932B;
+text-indent:-9999px;
+display:none;
+-webkit-border-radius:60px;
+-moz-border-radius:60px;
+border-radius:60px
+}
+#scroll span {
+position:absolute;
+top:50%;
+left:50%;
+margin-left:-8px;
+margin-top:-12px;
+height:0;
+width:0;
+border:8px solid transparent;
+border-bottom-color:#ffffff
+}
+#scroll:hover {
+background-color:#06CA33;
+opacity:1;filter:"alpha(opacity=100)";
+-ms-filter:"alpha(opacity=100)";}
+
+.about_us_container{
+	padding : 30px 0px;
+}
+.left_container{
+	width : 24%;
+	float : left;
+}
+.right_container{
+	width : 70%;
+	float : right;
+}
+.left_col_1{
+	border : 1px solid #0C3716;
+	width : 100%;
+	clear : both;
+	background : #F0F9ED;
+	border-radius : 5px;
+	margin-bottom : 30px;
+}
+.about_us_menus li{
+	width : 93%;
+	border-bottom : 1px dotted #144602;
+	padding : 12px 10px;
+	text-indent : 10px;
+}
+.about_us_menus li.last{
+	border-bottom : none;
+}
+.about_us_menus li:hover{
+	background : #D3F5C6;
+}
+.quick_contact_view{
+	text-align : center;
+}
+.quick_contact_view h3{
+	text-align : center;
+}
+.social_share{
+	min-height : 120px;
+}
+.social_share h3{
+	text-align : center;
+	padding : 14px 0px;
+	margin : 5px;
+}
+.social_share .social_links{
+	float : left;
+	margin-left : 30%;
+}
+.about_us_menus .first, .about_us_menus .first:hover{
+	background : #01a43b;
+	color : #ffffff;
+	font-weight : bold;
+}
+.about_us_detail_img, .about_us_owner_img{
+	width : 100%;
+	text-align : center;
+	padding : 20px;
+}
+.about_us_detail_img img{
+	width : 60%;
+	border : 2px solid #01a43b;
+	border-radius : 20px;
+}
+.about_us_owner_img img{
+	border : 2px solid #01a43b;
+	border-radius : 20px;
+}
+.about_us_detail_1 p{
+	text-indent : 30px;
+	line-height : 30px;
+}
+.about_us_detail_1 p.no_indent{
+	text-indent : 0px;
+}
+.about_us_detail_1 .bullet{
+	font-size : 18px;
+}
+.about_us_detail_2{
+	text-align : center;
+	clear : both;
+	width : 100%;
+}
+.facility_img li{
+	width : 25%;
+	float : left;
+	height : 160px;
+	position : relative;
+}
+
+.facility_img li img{
+	width : 100%;
+	height : 100%;
+}
+.top_facility{
+	width : 100%;
+	position : absolute;
+	bottom : 0px;
+	background : #000000;
+	height : 40px;
+	opacity : 0.8;
+	color : #ffffff;
+	text-align : center;
+	padding : 10px 0px;
+}
+
+.container{
+	padding : 30px 0px;
+}
+.container .testimonials{
+	margin-top : 0px;
+}
+.container .testimonials .testi_head  li{
+	width : 50%; 
+}
+.container .testimonials .testi_head  li#testi_li_first, .container .testimonials .testi_head  li#press_li_last {
+	width : 34.0%;
+}
+.specia_cont, .treatment_rates{
+	width : 100%;
+	clear : both;
+	display : block;
+}
+.specia_cont::after, .treatment_rates::after, ul::after{
+	display : table;
+	content : "";
+	clear : both;
+}
+
+.specia_cont h3{
+	width : 100%;
+	clear : both;
+}
+.specia_cont_img{
+	width : 30%;
+	height : 200px;
+	float : left;
+	text-align : center;
+	overflow : hidden;
+}
+.specia_cont_img img{
+	width : 100%;
+	border : 2px solid green;
+	border-radius : 5px;
+	margin-bottom : 20px;
+}
+.specia_cont_img_detail{
+	width : 66%;
+	float : right;
+}
+.spe_cont_desc p{
+	font-size : 14px;
+	line-height : 20px;
+	text-align : justify;
+}
+.spe_cont_desc_list ul{
+	margin : 20px 20px 20px 50px;
+}
+.spe_cont_desc_list ul li{
+	padding : 4px 20px;
+	 list-style-type:circle;
+}
+.line_1{
+	clear : both;
+	width : 100%;
+	border-bottom-style:double;
+}
+
+.treatment_rates{
+	text-align : center;
+}
+.treatment_rates_img {
+	width : 36%;
+	float : left;
+	text-align : center;
+}
+.treatment_rates_detail {
+	width : 60%;
+	float : right;
+}
+.treatment_rates_detail_left{
+	width : 60%;
+	float : left;
+	/* padding-top : 30px; */
+}
+/*.treatment_rates_img_1{
+	height : 200px;
+}*/
+.treatment_rates_img_right{
+	width : 36%;
+	float : right;
+	text-align : center;
+}
+.treatment_rates_img img, .treatment_rates_img_3 img {
+	width : 100%;
+	min-height : 200px;
+	border : 1px solid #000000;
+	border-radius : 10px;
+}
+.treatment_rates_img_3{
+	width : 100%;
+}
+.plus{
+	color : green;
+	font-size : 36px;
+	text-align : center;
+}
+
+.treatment_rates_detail{
+	/* padding-top : 30px; */
+}
+.double_treatment_rates_detail{
+	padding-top : 120px;
+}
+.Accommodation ul li{
+	padding : 10px;
+}
+
+.gallery_container ul{
+	width: 100%;
+	height : auto;
+}
+.gallery_container ul li{
+	width : 30%;
+	float : left;	
+	height : 160px;
+	margin  : 12px;
+	overflow : hidden;
+}
+.gallery_container ul li img{
+	width : 100%;
+	height : 100%;
+	border-radius : 10px;
+	border : 2px solid green;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.gallery_container ul li img:hover{
+	-moz-transform: scale(1.4);
+	-webkit-transform: scale(1.4);
+	-o-transform: scale(1.4);
+	-ms-transform: scale(1.4);
+	transform: scale(1.4);
+}
+.contact_us_container{
+	width : 100%;
+	height : auto;
+	display : block;
+}
+.contact_us_container{
+	content : " ";
+	clear : table;
+	display : table;
+}
+.contact_us_left{
+	width : 38%;
+	float : left;
+}
+.contact_us_right{
+	width : 60%;
+	float : right;
+}
+.contact_us_right .quick_contact h5{
+	text-align : center;
+	margin : 30px;
+	font-size : 24px;
+}
+.contact_us_right #contact {
+	padding : 20px 20px 20px 20px !important;
+	background : #F3FFF0;
+}
+.f_address_c{
+	font-size : 16px;
+	line-height : 30px;
+}
+.f_address_c span{
+	color : #EA4B06;
+	font-weight : bold;
+}
+
+.f_address_c span.doct_deta{
+	color : #1006EA;
+}
+
+
+#cssSlider {
+  width: 800px;
+	height: 500px;
+	overflow: hidden;
+	border: 4px solid #666;
+}
+
+#sliderImages {
+	width : 4000px;
+	height: 500px;
+	overflow: hidden;
+	
+	/* animation duration: 16s : 5x ~3s display image + 5x ~0.2s slide */
+	animation: slide 16s infinite;
+	-moz-animation: slide 16s infinite;
+	-webkit-animation: slide 16s infinite;
+	-o-animation: slide 16s infinite;
+}
+
+#sliderImages img {
+	float: left;
+}
+.spec_cont {
+	padding : 10px;
+}
+.spec_cont p{
+	font-size : 14px;
+	line-height : 26px;
+	text-align : justify;
+	text-indent : 20px;
+}
+.treatment_rates h4{
+	font-size : 20px;
+	color : #bf0d0d;
+}
+.treatment_rates p{
+	font-size : 18px;
+	text-align : justify;
+	margin : 20px 0px;
+}
+.treatment_rates h3{
+	margin-top : 0px;
+	font-size : 22px;
+}
+.contact_detail p{
+	line-height : 26px;
+}
+.about_desc p{
+	text-indent : 20px;
+	margin-bottom : 10px;
+}
+.about_desc p span{
+	text-decoration : underline;
+}
+.specialities_container .right_container p{
+	margin : 14px 0px;
+	font-size : 16px;
+	line-height : 26px;
+	text-align : justify;
+}
+.specialities_container .right_container ul {
+	padding : 0px 20px;
+}
+.specialities_container .right_container ul li{
+	 list-style-type: square;
+	 list-style-position: outside;
+	 list-style-image: none;
+}
+.h1_fix
+{
+	font-size: 23px;
+}
+
+.h1_keyfix
+{
+	font-size:20px;
+	font-style: italic;
+	color:#cc6600;
+	text-decoration: underline; 
+     
+}
+.inn_key
+{
+font-style: italic;
+font-weight: bold;
+text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
